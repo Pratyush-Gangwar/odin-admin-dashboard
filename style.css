@@ -10,6 +10,8 @@ body, html {
     height: 100%;
     background-color: black;
     font-family: Roboto;
+
+    --top-padding: 15px 75px 15px 50px;
 }
 
 .container {
@@ -32,7 +34,7 @@ body, html {
     grid-column: 2 / -1;
 
     display: flex;
-    padding: 15px 75px 15px 50px;
+    padding: var(--top-padding);
 
     gap: 15vw;
 }
@@ -71,8 +73,8 @@ body, html {
 }
 
 .navbar .avatar {
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 
@@ -82,9 +84,54 @@ body, html {
 }
 
 .welcome-bar {
-    background-color: grey;
+    background-color: white;
     grid-row: 2;
     grid-column: 2 / -1;
+
+    padding: var(--top-padding);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-bar .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.welcome-bar .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.welcome-bar .greeting {
+    line-height: 1.5;
+}
+
+.welcome-bar .greeting > :nth-child(1) {
+    font-size: 14px;
+} 
+
+.welcome-bar .greeting > :nth-child(2) {
+    font-size: 20px;
+} 
+
+.welcome-bar .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-bar .buttons button {
+    color: white;
+    background-color: #1992d4;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
 }
 
 .projects {
