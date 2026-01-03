@@ -23,9 +23,50 @@ body, html {
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #1992d4;
     grid-row: 1/-1;
     grid-column: 1;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .item svg {
+    fill: #ffffff;
+    height: 60px;
+    width: 60px;
+}
+
+.sidebar .item > div {
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar .title > div {
+    font-size: 30px;
+}
+
+.sidebar .item:not(.title) svg {
+    padding: 0px 15px;
+    height: 30px;
+}
+
+.sidebar .item:not(.title) > div {
+    font-size: 20px;
 }
 
 .navbar {
