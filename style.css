@@ -11,17 +11,17 @@ body, html {
     background-color: black;
     font-family: Roboto;
 
-    --top-bars-padding: 15px 75px 10px 50px;
+    --top-bars-padding: 10px 75px 10px 50px;
     --grey: #e2e8f0;
     --blue: #1992d4;
 }
 
 .container {
-    height: 100%;
+    height: 100%; 
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1.5fr repeat(2, 6fr);
+    grid-template-rows: 0.5fr 0.8fr repeat(2, 5fr);
 }
 
 .sidebar {
@@ -186,7 +186,7 @@ body, html {
 
 .projects > .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px 30px;
 }
 
@@ -196,8 +196,8 @@ body, html {
     margin-bottom: 20px;
 }
 
-.cards > .card {
-    height: 180px;
+.projects > .cards > .card {
+    height: 220px;
     padding: 30px 20px;
     background-color: white;
     border-radius: 10px;
@@ -210,23 +210,23 @@ body, html {
     box-shadow: 2px 2px 10px 0 grey;
 }
 
-.card > .content > .title {
+.projects > .cards > .card > .content > .title {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.card > .content > .text {
+.projects > .cards > .card > .content > .text {
     color: #646464;
     font-size: 14px;
 }
 
-.card > .icons {
+.projects > .cards > .card > .icons {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
 }
 
-.card > .icons > img {
+.projects > .cards > .card > .icons > img {
     width: 25px;
     height: 25px;
 }
@@ -235,6 +235,41 @@ body, html {
     background-color: var(--grey);
     grid-row: 3;
     grid-column: 3;
+    padding: 30px 20px 0px 20px;
+}
+
+.announcements > .heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.announcements > .items {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 grey;
+}
+
+.announcements > .items > .item:not(:last-child) {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #a3a2a2;
+}
+
+.announcements > .items > .item:not(:first-child) {
+    padding-top: 15px;
+}
+
+.announcements > .items > .item > .title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.announcements > .items > .item > .content {
+    font-size: 13px;
+    color: #646464;
 }
 
 .trending {
