@@ -197,7 +197,7 @@ body, html {
 }
 
 .projects > .cards > .card {
-    height: 220px;
+    height: 250px;
     padding: 30px 20px;
     background-color: white;
     border-radius: 10px;
@@ -272,8 +272,48 @@ body, html {
     color: #646464;
 }
 
-.trending {
+.people {
     background-color: var(--grey);
     grid-row: 4;
     grid-column: 3;
+    padding: 15px 20px 0px 20px;
+}
+
+.people > .heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.people > .items {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 grey;
+}
+
+.people > .items > .item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.people > .items > .item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.people > .items > .item > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.people > .items > .item > .content > .tag {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.people > .items > .item > .content > .quote {
+    font-size: 14px;
 }
