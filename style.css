@@ -78,7 +78,8 @@ body, html {
     display: flex;
     padding: 10px 75px 5px 50px;
 
-    gap: 15vw;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .navbar .search {
@@ -86,7 +87,7 @@ body, html {
     align-items: center;
     gap: 10px;
 
-    flex: 1;
+    flex: 0 1 700px;
 }
 
 .navbar img {
